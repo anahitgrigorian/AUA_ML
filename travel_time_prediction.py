@@ -1,10 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Define file path for Gasprice.txt (update this path if needed)
 file_path = '/home/agrigoryan/Desktop/AUA_ML/Gasprice.txt'
-
-# Read the file and load data
 data = np.loadtxt(file_path, delimiter=',')
 
 # Extract columns from data
@@ -13,7 +10,7 @@ gallons_used = data[:, 1]
 price_per_gallon = data[:, 2]
 total_cost = data[:, 3]
 
-# Perform calculations (Example: Cost per Mile)
+# Perform calculations 
 cost_per_mile = total_cost / miles_driven
 
 # Print summary statistics
